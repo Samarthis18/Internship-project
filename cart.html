@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart and Payment</title>
+
+  <link rel="stylesheet" href="checkout.css" />
+  <script src="checkout.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Left Container: Cart -->
+    <div class="left-container">
+      <h2>Cart</h2>
+      <p class="subtext">check your cart items before proceeding to payment</p>
+
+      <div class="cart-item">
+        <input type="checkbox" checked />
+        <img src="images/design1.jpg" alt="Car design" />
+        <div class="item-info">
+          <p>Mechanical design</p>
+          <p>Description ▼</p>
+        </div>
+        <div class="price">₹300/-</div>
+        <button class="edit-btn">✖ Edit Order</button>
+      </div>
+
+      <div class="cart-item">
+        <input type="checkbox" checked />
+        <img src="images/img_image_6.png" alt="Car design" />
+        <div class="item-info">
+          <p>Mechanical design</p>
+          <p>Description ▼</p>
+        </div>
+        <div class="price">₹300/-</div>
+        <button class="edit-btn">✖ Edit Order</button>
+      </div>
+
+      <div class="cart-item">
+        <input type="checkbox" checked />
+        <img src="images/design1.jpg" alt="Blueprint" />
+        <div class="item-info">
+          <p>Mechanical design</p>
+          <p>Description ▼</p>
+        </div>
+        <div class="price">₹300/-</div>
+        <button class="edit-btn">✖ Edit Order</button>
+      </div>
+
+      <div class="promo">
+        <label>Promocode</label>
+        <div class="input-group">
+          <input type="text" value="HOLA123" />
+          <button class="verify-btn">★ Verify</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Container: Payment -->
+    <div class="right-container">
+      <h2>Payment Method</h2>
+      
+      <label><input type="radio" checked /> GPAY ID</label>
+      <div class="input-group">
+        <input type="text" value="HOLA123@12A" />
+        <button class="verify-btn">★ Verify</button>
+      </div>
+      <a href="qr.html"><button class="qr-btn">Generate QR Scanner</button></a>
+
+      <div class="summary">
+        <h3>Summary(3 Items)</h3>
+        <p>Total <span>₹900</span></p>
+        <p>Discount <span>₹300</span></p>
+        <p class="final-total">Total <span>₹600</span></p>
+      </div>
+
+      <a href="paymentsucc.html">
+          <button class="pay-btn">
+          PAY</button>
+        </a>
+      <a href="explore.html"><button class="back-btn">← GO BACK</button></a>
+    </div>
+  </div>
+</body>
+
+</html>
